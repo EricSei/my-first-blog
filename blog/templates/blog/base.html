@@ -35,15 +35,18 @@
                         <i class="fas fa-plus"></i>
                     </span>
                 </a>
-                <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+                <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit">Edit</span></a>
+                <p class="top-menu">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
+                {% else %}
+                <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock">Log In</span></a>
                 {% endif %}
                 <h1><a href="/">Django Girls Blog </a></h1>
             </div>
 
      
-            <div class="container">
+            <div class=" content container">
                 <div class="row">
-                    <div class="col-md-12 bg-light">
+                    <div class="col-md-8 bg-light">
                     {% block content %}
 
                     {% endblock %}
