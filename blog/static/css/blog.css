@@ -8,6 +8,10 @@ h1 a, h2 a {
 }
 
 .page-header {
+<<<<<<< HEAD
+=======
+    background-color: #2b5aa5;
+>>>>>>> d6b01f96e6666809cc23574f56f205b353522548
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
